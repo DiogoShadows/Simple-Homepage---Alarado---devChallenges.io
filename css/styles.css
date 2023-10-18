@@ -1,10 +1,32 @@
 .headerButton{
-    border: none;
-    background-color: transparent;
     color: #909193;
     font-family: 'Poppins', sans-serif;
 }
 
 .headerButton:hover{
     color: #111729;
+}
+
+.removeBorderAndBackgroundColor{
+    border: none;
+    background-color: transparent;
+}
+
+.darkLightDiv{
+    background-color: #223344;
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.buttonLight{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.buttonDark{
+    background-color: transparent;
+}
+
+.svgWhite{
+    filter: brightness(0) invert(1);
 }
