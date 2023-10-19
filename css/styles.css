@@ -1,6 +1,5 @@
 .headerButton{
     color: #909193;
-    font-family: 'Poppins', sans-serif;
 }
 
 .headerButton:hover{
@@ -29,4 +28,8 @@
 
 .svgWhite{
     filter: brightness(0) invert(1);
+}
+
+.bodyText{
+    font-family: 'Poppins', sans-serif;
 }
