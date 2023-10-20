@@ -1,9 +1,13 @@
-.headerButton{
+.headerButtonLight, .headerButtonDark{
     color: #909193;
 }
 
-.headerButton:hover{
+.headerButtonLight:hover{
     color: #111729;
+}
+
+.headerButtonDark:hover{
+    color: #F2F9FE;
 }
 
 .removeBorderAndBackgroundColor{
@@ -32,4 +36,20 @@
 
 .bodyText{
     font-family: 'Poppins', sans-serif;
+}
+
+.bodyDark{
+    background-color: #111729;
+}
+
+.bodyLight{
+    background-color: #F2F9FE;
+}
+
+.letterBlack{
+    color: black;
+}
+
+.letterLight{
+    color: #F2F9FE;
 }
