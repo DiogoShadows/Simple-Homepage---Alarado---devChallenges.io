@@ -35,6 +35,10 @@
     filter: brightness(0) invert(1);
 }
 
+.svgGreen {
+    filter: invert(49%) sepia(89%) saturate(291%) hue-rotate(75deg) brightness(94%) contrast(86%);
+}
+
 .bodyText {
     font-family: 'Poppins', sans-serif;
 }
@@ -53,4 +57,21 @@
 
 .letterLight {
     color: #F2F9FE;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #divButtonsHeader {
+        display: none;
+    }
+
+    #buttonChangeTheme {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    #buttonOpenMenu {
+        display: none;
+    }
 }

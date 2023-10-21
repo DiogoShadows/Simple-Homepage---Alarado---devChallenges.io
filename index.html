@@ -18,7 +18,7 @@
     <header>
         <div class="row">
             <img src="images/alarado-icon-homepage.svg" alt="Logo">
-            <div class="text-center col-sm">
+            <div class="text-center col-sm" id="divButtonsHeader">
                 <button type="button" class="headerButtonLight bodyText removeBorderAndBackgroundColor">About
                     us</button>
                 <button type="button" class="headerButtonLight bodyText removeBorderAndBackgroundColor">Product</button>
@@ -26,7 +26,7 @@
                     class="headerButtonLight bodyText removeBorderAndBackgroundColor">Resource</button>
                 <button type="button" class="headerButtonLight bodyText removeBorderAndBackgroundColor">Contact</button>
             </div>
-            <button type="button" class="text-end darkLightDiv" onclick="changeMode()"
+            <button type="button" id="buttonChangeTheme" class="text-end darkLightDiv" onclick="changeMode()"
                 style="display: inline-flex; border: none;">
                 <div id="divMoonButton" class="removeBorderAndBackgroundColor buttonDark">
                     <img id="moonButton" src="images/Moon_fill.svg" alt="Dark Mode" class="svgWhite" />
@@ -35,6 +35,9 @@
                     <img id="sunButton" src="images/Sun_fill.svg" alt="Light Mode" />
                 </div>
             </button>
+
+            <!-- Mobile Menu -->
+            <button type="button" id="buttonOpenMenu" class="text-end">button</button>
         </div>
         </div>
     </header>
@@ -61,11 +64,11 @@
                     <a href="#" style="color: #2A4DD0;" class="ml-4 mt-3 bodyText">Get live demo</a>
                 </div>
                 <div class="row mt-4">
-                    <img src="images/Done_ring_round_fill.svg" alt="CheckSvg" />
+                    <img src="images/Done_ring_round_fill.svg" class="svgGreen" alt="CheckSvg" />
                     <div class="ml-2 bodyText divText">
                         No credit card required
                     </div>
-                    <img class="ml-4" src="images/Done_ring_round_fill.svg" alt="CheckSvg" />
+                    <img class="ml-4 svgGreen" src="images/Done_ring_round_fill.svg" alt="CheckSvg" />
                     <div class="ml-2 bodyText divText">
                         No software to install
                     </div>
