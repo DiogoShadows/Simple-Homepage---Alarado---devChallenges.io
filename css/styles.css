@@ -1,55 +1,56 @@
-.headerButtonLight, .headerButtonDark{
+.headerButtonLight,
+.headerButtonDark {
     color: #909193;
 }
 
-.headerButtonLight:hover{
+.headerButtonLight:hover {
     color: #111729;
 }
 
-.headerButtonDark:hover{
+.headerButtonDark:hover {
     color: #F2F9FE;
 }
 
-.removeBorderAndBackgroundColor{
+.removeBorderAndBackgroundColor {
     border: none;
     background-color: transparent;
 }
 
-.darkLightDiv{
+.darkLightDiv {
     background-color: #223344;
     border-radius: 25px;
     padding: 3px;
 }
 
-.buttonLight{
+.buttonLight {
     background-color: white;
     border-radius: 25px;
 }
 
-.buttonDark{
+.buttonDark {
     background-color: transparent;
 }
 
-.svgWhite{
+.svgWhite {
     filter: brightness(0) invert(1);
 }
 
-.bodyText{
+.bodyText {
     font-family: 'Poppins', sans-serif;
 }
 
-.bodyDark{
+.bodyDark {
     background-color: #111729;
 }
 
-.bodyLight{
+.bodyLight {
     background-color: #F2F9FE;
 }
 
-.letterBlack{
+.letterBlack {
     color: black;
 }
 
-.letterLight{
+.letterLight {
     color: #F2F9FE;
 }

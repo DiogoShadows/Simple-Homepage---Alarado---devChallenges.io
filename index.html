@@ -17,19 +17,22 @@
 <body class="my-4 bodyLight" id="mainBody" style="margin-left: 80px; margin-right: 80px;">
     <header>
         <div class="row">
-            <img class="logo" src="images/alarado-icon-homepage.svg" alt="Main Logo">
+            <img src="images/alarado-icon-homepage.svg" alt="Logo">
             <div class="text-center col-sm">
-                <button type="button" class="headerButtonLight bodyText removeBorderAndBackgroundColor">About us</button>
+                <button type="button" class="headerButtonLight bodyText removeBorderAndBackgroundColor">About
+                    us</button>
                 <button type="button" class="headerButtonLight bodyText removeBorderAndBackgroundColor">Product</button>
-                <button type="button" class="headerButtonLight bodyText removeBorderAndBackgroundColor">Resource</button>
+                <button type="button"
+                    class="headerButtonLight bodyText removeBorderAndBackgroundColor">Resource</button>
                 <button type="button" class="headerButtonLight bodyText removeBorderAndBackgroundColor">Contact</button>
             </div>
-            <button type="button" class="text-end darkLightDiv" onclick="changeMode()" style="display: inline-flex;">
-                <div class="removeBorderAndBackgroundColor buttonDark">
-                    <img src="images/Moon_fill.svg" alt="Dark Mode" class="svgWhite" />
+            <button type="button" class="text-end darkLightDiv" onclick="changeMode()"
+                style="display: inline-flex; border: none;">
+                <div id="divMoonButton" class="removeBorderAndBackgroundColor buttonDark">
+                    <img id="moonButton" src="images/Moon_fill.svg" alt="Dark Mode" class="svgWhite" />
                 </div>
-                <div class="removeBorderAndBackgroundColor buttonLight">
-                    <img src="images/Sun_fill.svg" alt="Light Mode" />
+                <div id="divSunButton" class="removeBorderAndBackgroundColor buttonLight">
+                    <img id="sunButton" src="images/Sun_fill.svg" alt="Light Mode" />
                 </div>
             </button>
         </div>
