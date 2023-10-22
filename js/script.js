@@ -3,16 +3,19 @@ function changeMode() {
     if (element.classList.contains("bodyLight")) {
         element.classList.remove("bodyLight")
         element.classList.add("bodyDark")
-        this.changeColorLetters(true)
-        this.changeClassButtons(true)
-        this.changeButtonsThemeColor(true)
+        this.changeModeOfItens(true)
         return;
     }
     element.classList.remove("bodyDark")
     element.classList.add("bodyLight")
-    this.changeColorLetters(false)
-    this.changeClassButtons(false)
-    this.changeButtonsThemeColor(false)
+    this.changeModeOfItens(false)
+}
+
+function changeModeOfItens(darkMode) {
+    this.changeColorLetters(darkMode)
+    this.changeClassButtons(darkMode)
+    this.changeButtonsThemeColor(darkMode)
+    this.changeMenuMobileTheme(darkMode)
 }
 
 function changeColorLetters(darkMode) {
@@ -62,4 +65,15 @@ function addClassLightFromButton(element) {
 function addClassDarkFromButton(element) {
     element.classList.add("buttonDark")
     element.classList.remove("buttonLight")
+}
+
+function changeMenuMobileTheme(darkMode){
+    element = document.getElementById("buttonOpenMenu")
+
+    if (darkMode){
+        element.classList.add("svgWhite")
+        return
+    }
+
+    element.classList.remove("svgWhite  ")
 }
