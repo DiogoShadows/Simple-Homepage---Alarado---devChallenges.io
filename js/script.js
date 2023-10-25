@@ -1,3 +1,14 @@
+function openMenu() {
+    var element = document.getElementById("menuMobile")
+    element.classList.remove("invisible")
+    element.classList.add("visible")
+}
+
+function closeMenu () {
+    var element = document.getElementById("menuMobile")
+    element.classList.add("invisible")
+}
+
 function changeMode() {
     var element = document.getElementById("mainBody")
     if (element.classList.contains("bodyLight")) {
