@@ -6,6 +6,7 @@ function openMenu() {
 
 function closeMenu () {
     var element = document.getElementById("menuMobile")
+    element.classList.remove("visible")
     element.classList.add("invisible")
 }
 

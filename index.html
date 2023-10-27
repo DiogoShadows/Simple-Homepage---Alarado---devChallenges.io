@@ -38,9 +38,10 @@
 
             <!-- Mobile -->
             <button type="button" id="buttonOpenMenu" class="ml-auto removeBorderAndBackgroundColor">
-                <img onclick="openMenu()" width="30px" src="images/menu-symbol-of-three-parallel-lines-svgrepo-com.svg" alt="Menu Button"/>
+                <img onclick="openMenu()" width="30px" src="images/menu-symbol-of-three-parallel-lines-svgrepo-com.svg"
+                    alt="Menu Button" />
             </button>
-            
+
         </div>
         </div>
     </header>
@@ -48,14 +49,23 @@
     <main style="margin-top: 80px;">
 
         <!-- Mobile Menu -->
-        <div id="menuMobile" class="invisible" style="position: fixed; width: 70%; height: 100%; background-color: white; z-index: 1; top: 0px; right: 0px;">
+        <div id="menuMobile" class="invisible"
+            style="position: fixed; width: 70%; height: 100%; background-color: white; z-index: 1; top: 0px; right: 0px;">
+            <div class="row m-3">
+                <button type="button" class="removeBorderAndBackgroundColor ml-auto">
+                    <img onclick="closeMenu()" width="30px" src="images/close-x-svgrepo-com.svg" alt="Close Menu" />
+                </button>
+            </div>
             <div style="display: flex; flex-direction: column; margin-top: 10%;">
-                <button type="button" class="fontSizeAdaptScreen headerButtonLight bodyText removeBorderAndBackgroundColor">About
+                <button type="button"
+                    class="fontSizeAdaptScreen headerButtonLight bodyText removeBorderAndBackgroundColor">About
                     us</button>
-                <button type="button" class="fontSizeAdaptScreen headerButtonLight bodyText removeBorderAndBackgroundColor">Product</button>
+                <button type="button"
+                    class="fontSizeAdaptScreen headerButtonLight bodyText removeBorderAndBackgroundColor">Product</button>
                 <button type="button"
                     class="fontSizeAdaptScreen headerButtonLight bodyText removeBorderAndBackgroundColor">Resource</button>
-                <button type="button" class="fontSizeAdaptScreen headerButtonLight bodyText removeBorderAndBackgroundColor">Contact</button>
+                <button type="button"
+                    class="fontSizeAdaptScreen headerButtonLight bodyText removeBorderAndBackgroundColor">Contact</button>
             </div>
         </div>
         <div class="row">
