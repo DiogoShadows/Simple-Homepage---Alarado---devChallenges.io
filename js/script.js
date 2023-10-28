@@ -1,13 +1,7 @@
-function openMenu() {
+function changeMenuMobileVisibility(visible) {
     var element = document.getElementById("menuMobile")
-    element.classList.remove("invisible")
-    element.classList.add("visible")
-}
-
-function closeMenu () {
-    var element = document.getElementById("menuMobile")
-    element.classList.remove("visible")
-    element.classList.add("invisible")
+    element.classList.remove(visible ? "invisible" : "visible")
+    element.classList.add(visible ? "visible" : "invisible")
 }
 
 function changeMode() {
@@ -79,13 +73,23 @@ function addClassDarkFromButton(element) {
     element.classList.remove("buttonLight")
 }
 
-function changeMenuMobileTheme(darkMode){
+function changeMenuMobileTheme(darkMode) {
     element = document.getElementById("buttonOpenMenu")
 
-    if (darkMode){
+    if (darkMode) {
         element.classList.add("svgWhite")
         return
     }
 
     element.classList.remove("svgWhite  ")
 }
+
+var visibilityMenuMobile = function () {
+
+    if (window.innerWidth > 710) {
+        this.changeMenuMobileVisibility(false)
+    }
+};
+
+window.addEventListener("resize", visibilityMenuMobile);
+window.addEventListener("onload", visibilityMenuMobile);
