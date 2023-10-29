@@ -7,14 +7,18 @@ function changeMenuMobileVisibility(visible) {
 function changeMode() {
     var element = document.getElementById("mainBody")
     if (element.classList.contains("bodyLight")) {
-        element.classList.remove("bodyLight")
-        element.classList.add("bodyDark")
+        this.changeBodyTheme(false)
         this.changeModeOfItens(true)
         return;
     }
-    element.classList.remove("bodyDark")
-    element.classList.add("bodyLight")
+    this.changeBodyTheme(true)
     this.changeModeOfItens(false)
+}
+
+function changeBodyTheme(light) {
+    var element = document.getElementById("mainBody")
+    element.classList.remove(light ? "bodyDark" : "bodyLight")
+    element.classList.add(light ? "bodyLight" : "bodyDark")
 }
 
 function changeModeOfItens(darkMode) {
@@ -22,6 +26,7 @@ function changeModeOfItens(darkMode) {
     this.changeClassButtons(darkMode)
     this.changeButtonsThemeColor(darkMode)
     this.changeMenuMobileTheme(darkMode)
+    this.changeButtonsMobileThemeColor(darkMode)
 }
 
 function changeColorLetters(darkMode) {
@@ -40,6 +45,27 @@ function changeClassButtons(darkMode) {
         elements[i].classList.add(darkMode == true ? "headerButtonDark" : "headerButtonLight")
         elements[i].classList.remove(darkMode == false ? "headerButtonDark" : "headerButtonLight")
     }
+}
+
+function changeButtonsMobileThemeColor(darkMode) {
+    var moonElement = document.getElementById("moonButtonMobile")
+    var sunElement = document.getElementById("sunButtonMobile")
+    var divMoonElement = document.getElementById("divMoonButtonMobile")
+    var divSunElement = document.getElementById("divSunButtonMobile")
+
+    if (darkMode) {
+        sunElement.classList.add("svgWhite")
+        moonElement.classList.remove("svgWhite")
+
+        addClassLightFromButton(divMoonElement)
+        addClassDarkFromButton(divSunElement)
+        return
+    }
+
+    addClassLightFromButton(divSunElement)
+    addClassDarkFromButton(divMoonElement)
+    moonElement.classList.add("svgWhite")
+    sunElement.classList.remove("svgWhite")
 }
 
 function changeButtonsThemeColor(darkMode) {
@@ -81,7 +107,7 @@ function changeMenuMobileTheme(darkMode) {
         return
     }
 
-    element.classList.remove("svgWhite  ")
+    element.classList.remove("svgWhite")
 }
 
 var visibilityMenuMobile = function () {
