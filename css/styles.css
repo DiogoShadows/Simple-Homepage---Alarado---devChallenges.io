@@ -63,7 +63,7 @@
     font-size: 70px;
 }
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 800px) {
 
     #divButtonsHeader {
         display: none;
@@ -74,7 +74,7 @@
     }
 }
 
-@media only screen and (min-width: 710px) {
+@media only screen and (min-width: 800px) {
     #buttonOpenMenu {
         display: none;
     }

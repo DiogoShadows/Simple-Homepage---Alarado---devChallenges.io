@@ -112,7 +112,7 @@ function changeMenuMobileTheme(darkMode) {
 
 var visibilityMenuMobile = function () {
 
-    if (window.innerWidth > 710) {
+    if (window.innerWidth > 800) {
         this.changeMenuMobileVisibility(false)
     }
 };
